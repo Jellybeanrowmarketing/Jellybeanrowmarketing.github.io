@@ -665,22 +665,40 @@ const obs = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.08 });
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-// ── Contact form submit ──
+// — Contact form submit —
 const fsub = document.querySelector('.fsub');
 if (fsub) {
-  fsub.addEventListener('click', function() {
+  fsub.addEventListener('click', async function() {
     const name = document.querySelector('input[placeholder="Jane"]')?.value;
     const email = document.querySelector('input[type="email"]')?.value;
     if (!name || !email) {
       alert('Please fill in your name and email address.');
       return;
     }
-    fsub.textContent = '✓ Message Sent — We\'ll Be In Touch!';
-    fsub.style.background = '#1a9c2a';
+    const data = {};
+    document.querySelectorAll('.fg input, .fg textarea, .fg select').forEach(el => {
+      data[el.placeholder || el.name || 'field'] = el.value;
+    });
+    fsub.textContent = 'Sending...';
     fsub.disabled = true;
+    try {
+      const res = await fetch('https://formspree.io/f/xvzvandr', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+      });
+      if (res.ok) {
+        fsub.textContent = '✓ Message Sent — We\'ll Be In Touch!';
+        fsub.style.background = '#1a9c2a';
+      } else {
+        fsub.textContent = 'Error — Please Try Again';
+        fsub.style.background = '#c0392b';
+        fsub.disabled = false;
+      }
+    } catch(e) {
+      fsub.textContent = 'Error — Please Try Again';
+      fsub.style.background = '#c0392b';
+      fsub.disabled = false;
+    }
   });
 }
-</script>
-</body>
-</html>
