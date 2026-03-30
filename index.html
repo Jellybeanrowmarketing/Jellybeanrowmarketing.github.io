@@ -684,7 +684,7 @@ if (fsub) {
     try {
       const res = await fetch('https://formspree.io/f/xvzvandr', {
         method: 'POST',
-        headers: {'Accept': 'application/json'},
+        headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
         body: JSON.stringify(data)
       });
       if (res.ok) {
