@@ -1,0 +1,131 @@
+/* Shared quote form, mobile menu, and splash skip. Brand colours only. */
+#contact{scroll-margin-top:88px;}
+.nav-toggle{
+  display:none;
+  background:transparent;
+  border:1px solid rgba(41,184,224,0.4);
+  width:44px;height:44px;
+  border-radius:2px;
+  cursor:pointer;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:5px;
+  padding:0;
+}
+.nav-toggle span{display:block;width:18px;height:2px;background:#29b8e0;}
+@media(max-width:1000px){
+  .nav-toggle{display:flex;}
+  nav{position:fixed;}
+  nav.nav-open .nav-links{
+    display:flex !important;
+    flex-direction:column;
+    position:absolute;
+    top:100%;
+    left:0;right:0;
+    background:rgba(33,40,68,0.98);
+    padding:18px 24px 22px;
+    gap:14px;
+    border-bottom:1px solid rgba(41,184,224,0.18);
+    z-index:120;
+  }
+  nav.nav-open .nav-links a{color:#fff;}
+}
+#splash{cursor:pointer;}
+#splash.splash-done{animation:none !important;opacity:0 !important;visibility:hidden !important;pointer-events:none !important;}
+#site.site-shown{animation:none !important;opacity:1 !important;}
+
+.jbr-quote-sec{
+  background:#2a3355;
+  color:#fff;
+  padding:72px 24px;
+  font-family:'Barlow',sans-serif;
+}
+.jbr-quote-inner{
+  max-width:1080px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:48px;
+  align-items:start;
+}
+.jbr-kicker{
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:700;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:#29b8e0;
+  font-size:12px;
+  margin-bottom:10px;
+}
+.jbr-quote-copy h2{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(42px,6vw,64px);
+  line-height:0.95;
+  letter-spacing:1px;
+  margin:0 0 16px;
+  font-weight:400;
+}
+.jbr-quote-copy p{color:#b0bed8;font-size:16px;line-height:1.7;font-weight:300;margin:0 0 16px;}
+.jbr-contact-links{display:flex;flex-direction:column;gap:8px;}
+.jbr-contact-links a{color:#fff;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(41,184,224,0.45);width:fit-content;}
+.jbr-contact-links a:hover{color:#3dd6f5;}
+.jbr-related{font-size:14px !important;}
+.jbr-related a{color:#29b8e0;text-decoration:none;}
+.jbr-related a:hover{color:#3dd6f5;}
+.jbr-quote{display:flex;flex-direction:column;gap:12px;}
+.jbr-quote label{
+  display:flex;flex-direction:column;gap:6px;
+  font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#8a9bbf;
+}
+.jbr-quote input,.jbr-quote textarea,.jbr-quote select{
+  width:100%;
+  background:#212844;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:2px;
+  padding:13px 14px;
+  color:#fff;
+  font-family:'Barlow',sans-serif;
+  font-size:15px;
+  font-weight:400;
+  letter-spacing:0;
+  text-transform:none;
+}
+.jbr-quote textarea{min-height:110px;resize:vertical;}
+.jbr-quote input:focus,.jbr-quote textarea:focus,.jbr-quote select:focus{outline:none;border-color:#29b8e0;}
+.jbr-quote button,.jbr-quote .fsub{
+  background:#29b8e0;color:#212844;border:none;cursor:pointer;
+  font-family:'Barlow Condensed',sans-serif;font-weight:800;
+  letter-spacing:2px;text-transform:uppercase;font-size:15px;
+  padding:15px 18px;border-radius:2px;
+}
+.jbr-quote button:hover,.jbr-quote .fsub:hover{background:#3dd6f5;}
+.jbr-quote button:disabled,.jbr-quote .fsub:disabled{cursor:wait;opacity:0.85;}
+.jbr-form-status{min-height:1.2em;color:#b0bed8;font-size:14px;letter-spacing:0;text-transform:none;font-weight:400;}
+.jbr-faq{max-width:900px;margin:0 auto;padding:72px 24px;}
+.jbr-faq h2{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(36px,5vw,56px);
+  letter-spacing:1px;
+  margin:0 0 8px;
+  font-weight:400;
+}
+.jbr-faq .jbr-kicker{margin-bottom:8px;}
+.jbr-faq details{
+  border-top:1px solid rgba(41,184,224,0.18);
+  padding:14px 0;
+}
+.jbr-faq details:last-of-type{border-bottom:1px solid rgba(41,184,224,0.18);}
+.jbr-faq summary{
+  cursor:pointer;
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:700;
+  font-size:20px;
+  letter-spacing:0.3px;
+  color:#fff;
+}
+.jbr-faq details p{color:#b0bed8;font-weight:300;line-height:1.7;margin:10px 0 0;}
+@media(max-width:800px){
+  .jbr-quote-inner{grid-template-columns:1fr;gap:28px;}
+  .jbr-quote-sec{padding:56px 20px;}
+}

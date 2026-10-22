@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 <meta property="og:url" content="https://jellybeanrowmarketing.com/seo.html">
 <meta property="og:title" content="SEO Services St. John's NL — Rank Higher on Google | Jellybean Row Marketing">
 <meta property="og:description" content="On-page and off-page SEO that gets your business found. Jellybean Row Marketing builds organic rankings and local authority for businesses in Newfoundland and beyond.">
-<meta property="og:image" content="https://jellybeanrowmarketing.com/og-seo.jpg">
+<meta property="og:image" content="https://jellybeanrowmarketing.com/og-image.jpg">
 <meta property="og:site_name" content="Jellybean Row Marketing">
 <meta property="og:locale" content="en_CA">
 
@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SEO Services St. John's NL | Jellybean Row Marketing">
 <meta name="twitter:description" content="On-page and off-page SEO that gets your business found on Google. Local SEO specialists in Newfoundland.">
-<meta name="twitter:image" content="https://jellybeanrowmarketing.com/og-seo.jpg">
+<meta name="twitter:image" content="https://jellybeanrowmarketing.com/og-image.jpg">
 
 <!-- ═══ JSON-LD STRUCTURED DATA ═══ -->
 <script type="application/ld+json">
@@ -33,7 +33,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "ProfessionalService"],
       "name": "Jellybean Row Marketing",
       "url": "https://jellybeanrowmarketing.com",
       "logo": "https://jellybeanrowmarketing.com/logo.png",
@@ -47,6 +47,8 @@
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer service",
+        "telephone": "+17093156483",
+        "email": "tyler@jellybeanrowmarketing.com",
         "url": "https://jellybeanrowmarketing.com/#contact"
       }
     },
@@ -175,6 +177,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:fl
 #site{opacity:0;animation:siteReveal 0.7s 2.4s ease forwards;}
 @keyframes siteReveal{from{opacity:0;}to{opacity:1;}}
 </style>
+<link rel="stylesheet" href="assets/quote.css">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 <body>
 
@@ -227,7 +233,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:fl
           <div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--grl);margin-bottom:8px;">Starting At</div>
           <div style="font-family:'Bebas Neue',sans-serif;font-size:54px;color:var(--cy);line-height:1;margin-bottom:4px;">$1,500<span style="font-size:22px;color:var(--grl);">/month</span></div>
           <div style="font-size:13px;color:var(--grl);font-weight:300;">A flat monthly retainer &#8212; everything above included, with no long-term contract. Most Newfoundland businesses start seeing movement within the first 90 days.</div>
-          <a href="index.html#contact" class="btnp" style="margin-top:24px;width:100%;justify-content:center;">Get a Free SEO Audit &#8594;</a>
+          <a href="#contact" class="btnp" style="margin-top:24px;width:100%;justify-content:center;">Get a Quote &#8594;</a>
         </div>
       </div>
     </div>
@@ -304,14 +310,38 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:fl
 <div class="cta">
   <div class="lbl" style="justify-content:center;">Get Started</div>
   <h2 class="ttl" style="margin-bottom:16px;">Ready to Own<br><span class="c">Page One?</span></h2>
-  <p style="font-size:16px;font-weight:300;color:var(--grl);line-height:1.85;margin:0 auto 40px;max-width:600px;">Start with a free SEO audit &#8212; we&#8217;ll show you exactly where your rankings stand, what&#8217;s hurting your visibility, and what it will take to get to the top. No jargon. No pressure.</p>
+  <p style="font-size:16px;font-weight:300;color:var(--grl);line-height:1.85;margin:0 auto 40px;max-width:600px;">Tell us about the site and the searches that matter. We&#8217;ll reply with a quote for the SEO work, in plain language.</p>
   <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
-    <a href="index.html#contact" class="btnp">Get a Free SEO Audit &#8594;</a>
-    <a href="index.html#contact" class="btns">Talk to Our Team</a>
+    <a href="#contact" class="btnp">Get a Quote &#8594;</a>
+    <a href="#contact" class="btns">Talk to Our Team</a>
   </div>
 </div>
 
 </div><!-- /#site -->
 
+<section class="jbr-quote-sec" id="contact">
+  <div class="jbr-quote-inner">
+    <div class="jbr-quote-copy">
+      <p class="jbr-kicker">Start your project</p>
+      <h2>Get a quote.</h2>
+      <p>Tell us about the site and the searches you care about. We reply with a quote for SEO work.</p>
+      <p class="jbr-contact-links"><a href="tel:7093156483">709-315-6483</a><a href="mailto:tyler@jellybeanrowmarketing.com">tyler@jellybeanrowmarketing.com</a></p>
+      
+    </div>
+    <form class="jbr-quote" action="https://formspree.io/f/xvzvandr" method="POST">
+      <input type="hidden" name="_subject" value="Quote request from seo.html">
+      <input type="hidden" name="page" value="seo.html">
+      <label>Name<input type="text" name="name" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+      <label>Business<input type="text" name="business" autocomplete="organization"></label>
+      <label>What do you need?<textarea name="message" required></textarea></label>
+      <button type="submit">Get a Quote</button>
+      <p class="jbr-form-status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<script src="assets/quote.js" defer></script>
 </body>
 </html>
