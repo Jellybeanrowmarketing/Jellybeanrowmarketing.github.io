@@ -196,7 +196,7 @@
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--wh);font-family:'Barlow',sans-serif;overflow-x:hidden;}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:flex;align-items:center;justify-content:space-between;background:rgba(33,40,68,0.93);backdrop-filter:blur(20px);border-bottom:1px solid rgba(41,184,224,0.1);}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;row-gap:8px;background:rgba(33,40,68,0.93);backdrop-filter:blur(20px);border-bottom:1px solid rgba(41,184,224,0.1);}
 .nbrand{text-decoration:none;}
 .nname{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:14px;letter-spacing:2px;color:var(--wh);}
 .nsub{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:9px;letter-spacing:4px;color:var(--cy);}
@@ -312,7 +312,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:fl
 
 <nav>
   <a class="nbrand" href="index.html"><div class="nname">JELLYBEAN ROW</div><div class="nsub">MARKETING</div></a>
-  <a class="nback" href="index.html">&#8592; Back to Main Site</a>
+  <span style="display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:flex-end">
+    <a class="nback" href="case-studies.html">Case Studies</a>
+    <a class="nback" href="index.html">&#8592; Back to Main Site</a>
+  </span>
 </nav>
 
 <!-- HERO -->
@@ -422,6 +425,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:fl
 
 <!-- CTA -->
 <div class="cta">
+  <p style="font-size:16px;font-weight:300;line-height:1.7;margin:0 auto 28px;max-width:680px"><a href="case-study-seo.html" style="color:var(--cy)">See how this service helps businesses in St. John's.</a></p>
   <div class="lbl" style="justify-content:center;">Get Started</div>
   <h2 class="ttl" style="margin-bottom:16px;">Ready to Own<br><span class="c">Page One?</span></h2>
   <p style="font-size:16px;font-weight:300;color:var(--grl);line-height:1.85;margin:0 auto 40px;max-width:600px;">Tell us about the site and the searches that matter. We&#8217;ll reply with a quote for the SEO work, in plain language.</p>
