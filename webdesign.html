@@ -179,7 +179,7 @@
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--wh);font-family:'Barlow',sans-serif;overflow-x:hidden;}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:flex;align-items:center;justify-content:space-between;background:rgba(33,40,68,0.93);backdrop-filter:blur(20px);border-bottom:1px solid rgba(41,184,224,0.1);}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;row-gap:8px;background:rgba(33,40,68,0.93);backdrop-filter:blur(20px);border-bottom:1px solid rgba(41,184,224,0.1);}
 .nbrand{text-decoration:none;}
 .nname{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:14px;letter-spacing:2px;color:var(--wh);}
 .nsub{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:9px;letter-spacing:4px;color:var(--cy);}
@@ -377,7 +377,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:fl
 
 <nav>
   <a class="nbrand" href="index.html"><div class="nname">JELLYBEAN ROW</div><div class="nsub">MARKETING</div></a>
-  <a class="nback" href="index.html">&#8592; Back to Main Site</a>
+  <span style="display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:flex-end">
+    <a class="nback" href="case-studies.html">Case Studies</a>
+    <a class="nback" href="index.html">&#8592; Back to Main Site</a>
+  </span>
 </nav>
 
 <section class="hero">
@@ -450,6 +453,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:fl
 </div>
 
 <div class="cta">
+  <p style="font-size:16px;font-weight:300;line-height:1.7;margin:0 auto 28px;max-width:680px"><a href="case-study-web-design.html" style="color:var(--cy)">See how this service helps businesses in St. John's.</a></p>
   <div class="lbl" style="justify-content:center;">Get Started</div>
   <h2 class="ttl" style="margin-bottom:16px;">Ready to Move Beyond<br><span class="c">Template Websites?</span></h2>
   <p style="font-size:16px;font-weight:300;color:var(--grl);line-height:1.85;margin:0 auto 40px;max-width:600px;">Invest in a custom solution that's fast, unique, and truly yours. Request a quote &#8212; we'll scope your project and give you a transparent quote. No pressure, no jargon.</p>
@@ -482,7 +486,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:fl
     <summary>How do I start?</summary>
     <p>Use the quote form on this page, call <a href="tel:7093156483">709-315-6483</a>, or email <a href="mailto:tyler@jellybeanrowmarketing.com">tyler@jellybeanrowmarketing.com</a>.</p>
   </details>
-  <p class="jbr-related">Related: <a href="logo-design.html">logo design</a> · <a href="paid-advertising.html">Facebook, Instagram, and Google ads</a> · <a href="seo.html">SEO in St. John's</a></p>
+  <p class="jbr-related">Related: <a href="logo-design.html">logo design</a> · <a href="paid-advertising.html">Facebook, Instagram, and Google ads</a> · <a href="seo.html">SEO in St. John's</a> · <a href="case-study-web-design.html">how this service helps</a></p>
   <p class="jbr-related">From the journal: <a href="local-seo-newfoundland-businesses.html">local SEO for Newfoundland businesses</a></p>
 </section>
 
