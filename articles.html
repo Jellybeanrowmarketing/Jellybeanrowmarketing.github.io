@@ -61,7 +61,7 @@ body{background:var(--bg);color:var(--white);font-family:'Barlow',sans-serif;ove
 @keyframes spRing{0%,100%{opacity:0.15;transform:scale(1);}50%{opacity:0.5;transform:scale(1.03);}}
 .sp-logo{position:relative;z-index:2;opacity:0;animation:spLogoIn 1s 0.2s cubic-bezier(0.16,1,0.3,1) forwards;}
 @keyframes spLogoIn{from{opacity:0;transform:scale(0.3);}to{opacity:1;transform:scale(1);}}
-.sp-logo img{width:240px;}
+.sp-logo img{display:block;width:240px;height:auto;object-fit:contain;}
 .sp-page{position:relative;z-index:2;margin-top:-55px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:16px;letter-spacing:7px;text-transform:uppercase;color:var(--cyan);opacity:0;animation:spLogoIn 1s 0.7s cubic-bezier(0.16,1,0.3,1) forwards;}
 .sp-bar-wrap{width:180px;height:2px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden;opacity:0;animation:fadeIn 0.4s 0.5s ease forwards;}
 .sp-bar{height:100%;background:linear-gradient(90deg,var(--white),var(--cyan));animation:barFill 1.8s 0.5s ease forwards;}
@@ -71,7 +71,7 @@ body{background:var(--bg);color:var(--white);font-family:'Barlow',sans-serif;ove
 @keyframes siteReveal{from{opacity:0;}to{opacity:1;}}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:flex;align-items:center;justify-content:space-between;background:rgba(33,40,68,0.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(41,184,224,0.1);}
 .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
-.nav-logo{width:44px;height:44px;object-fit:contain;}
+.nav-logo{width:44px;height:auto;object-fit:contain;}
 .nav-brand-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:14px;letter-spacing:2px;color:var(--white);}
 .nav-brand-sub{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:9px;letter-spacing:4px;color:var(--cyan);}
 .nav-links{display:flex;gap:32px;list-style:none;align-items:center;}
