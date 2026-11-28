@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment received (test) | Jellybean Row Marketing</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Hidden test page shown after a JRM service payment.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#212844;--bg-mid:#2a3355;--bg-light:#303d65;--cyan:#29b8e0;--cyan-bright:#3dd6f5;--white:#fff;--grey:#8a9bbf;--grey-light:#b0bed8;--gold:#f0a500;}
+*{box-sizing:border-box;}
+[hidden]{display:none !important;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--white);font-family:'Barlow',sans-serif;line-height:1.6;}
+a{color:var(--cyan);}
+a:hover{color:var(--cyan-bright);}
+:focus-visible{outline:2px solid var(--white);outline-offset:3px;}
+.skip{position:absolute;left:12px;top:-40px;background:var(--cyan);color:var(--bg);padding:8px 12px;z-index:10;font-weight:700;}
+.skip:focus{top:12px;}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 22px;border-bottom:1px solid rgba(41,184,224,.22);background:rgba(33,40,68,.96);position:sticky;top:0;z-index:5;}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--white);}
+.brand img{height:52px;width:auto;object-fit:contain;}
+.brand-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:1px;font-size:18px;line-height:1;}
+.brand-sub{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:3px;color:var(--cyan);font-size:11px;}
+.top-note{font-size:13px;color:var(--grey-light);text-align:right;}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 72px;}
+.kicker{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--cyan);font-size:13px;margin:0 0 8px;}
+h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(42px,7vw,68px);line-height:.95;letter-spacing:1px;margin:0 0 12px;}
+.lede{color:var(--grey-light);font-size:17px;font-weight:300;margin:0 0 22px;}
+.banner{background:rgba(240,165,0,.12);border-left:3px solid var(--gold);padding:14px 16px;margin:0 0 22px;color:var(--grey-light);font-size:15px;}
+.card{background:var(--bg-mid);border:1px solid rgba(41,184,224,.22);border-left:3px solid var(--cyan);padding:22px;margin:0 0 22px;}
+.price{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,5vw,48px);color:var(--cyan);line-height:1;letter-spacing:1px;margin:6px 0;}
+.meta{color:var(--grey-light);font-size:15px;margin:0;}
+.steps{display:flex;gap:10px;margin:0 0 18px;padding:0;list-style:none;}
+.steps li{font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:13px;color:var(--grey);border:1px solid rgba(138,155,191,.35);padding:6px 10px;}
+.steps .on{color:var(--bg);background:var(--cyan);border-color:var(--cyan);}
+.agreement{max-height:min(70vh,640px);overflow:auto;background:#1b2340;border:1px solid rgba(41,184,224,.28);padding:22px 20px;margin:12px 0 8px;}
+.agreement h2,.agreement h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:.4px;color:var(--white);line-height:1.25;}
+.agreement h2{font-size:28px;margin:0 0 12px;}
+.agreement h3{font-size:22px;margin:28px 0 10px;color:var(--cyan);}
+.agreement p,.agreement li{font-size:15.5px;color:var(--grey-light);font-weight:400;}
+.agreement strong{color:var(--white);font-weight:650;}
+.agreement blockquote{margin:0 0 16px;padding:12px 14px;background:rgba(240,165,0,.1);border-left:3px solid var(--gold);color:var(--grey-light);}
+.agreement ul{padding-left:1.2em;}
+.agreement hr{border:0;border-top:1px solid rgba(41,184,224,.25);margin:22px 0;}
+.agreement table{width:100%;border-collapse:collapse;margin:12px 0 18px;font-size:14.5px;}
+.agreement th,.agreement td{border:1px solid rgba(176,190,216,.28);padding:8px 10px;text-align:left;vertical-align:top;color:var(--grey-light);}
+.agreement th{color:var(--white);background:rgba(41,184,224,.08);}
+.download{font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:14px;}
+form{display:flex;flex-direction:column;gap:14px;margin-top:8px;}
+.field{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:var(--grey-light);}
+.field input{font:400 16px/1.4 'Barlow',sans-serif;color:var(--white);background:var(--bg);border:1px solid rgba(176,190,216,.45);border-radius:2px;padding:12px 12px;min-height:48px;}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:16px;font-weight:400;color:var(--white);line-height:1.45;}
+.check input{width:22px;height:22px;margin-top:2px;flex:0 0 auto;accent-color:var(--cyan);}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+button,.pay-btn{appearance:none;border:0;cursor:pointer;background:var(--cyan);color:var(--bg);font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;font-size:16px;padding:14px 18px;text-decoration:none;display:inline-block;text-align:center;}
+button:hover,.pay-btn:hover{background:var(--cyan-bright);color:var(--bg);}
+button:disabled{opacity:.7;cursor:wait;}
+.status{min-height:1.4em;color:#ffd2d2;font-size:15px;margin:0;}
+.test-mode{margin:0;padding:14px 16px;border:1px solid var(--gold);color:var(--gold);font-weight:650;}
+.order{width:100%;border-collapse:collapse;margin-top:12px;font-size:15px;}
+.order th,.order td{text-align:left;padding:8px 0;border-bottom:1px solid rgba(176,190,216,.18);vertical-align:top;}
+.order th{color:var(--grey);font-weight:600;width:42%;padding-right:12px;}
+footer{border-top:1px solid rgba(41,184,224,.18);padding:22px;color:var(--grey);font-size:13px;text-align:center;}
+.chooser{padding-left:1.2em;}
+.chooser a{font-weight:600;}
+@media(max-width:640px){
+  .row2{grid-template-columns:1fr;}
+  .top{align-items:flex-start;}
+  .top-note{display:none;}
+  .agreement{padding:16px 12px;}
+  .agreement table{display:block;overflow-x:auto;}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png" alt="Jellybean Row Marketing" width="408" height="409">
+    <span><span class="brand-name">JELLYBEAN ROW</span><br><span class="brand-sub">MARKETING</span></span>
+  </a>
+  <p class="top-note">Hidden test<br>709-315-6483</p>
+</header>
+<main class="wrap">
+  <p class="kicker">Payment received</p>
+  <h1>Work starts now.</h1>
+  <p class="lede">Thank you. Your payment is in, and work starts now. We'll email you within 1 business day.</p>
+  <p class="meta">Questions before then: <a href="mailto:Tyler@Jellybeanrowmarketing.com">Tyler@Jellybeanrowmarketing.com</a> or <a href="tel:7093156483">709-315-6483</a>.</p>
+</main>
+<footer>© 2026 Jellybean Row Marketing Inc. · St. John's, NL</footer>
+</body>
+</html>

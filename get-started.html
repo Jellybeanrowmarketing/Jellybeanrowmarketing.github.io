@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign and pay (test) | Jellybean Row Marketing</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Hidden test page for signing the JRM service agreement and paying for a service.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#212844;--bg-mid:#2a3355;--bg-light:#303d65;--cyan:#29b8e0;--cyan-bright:#3dd6f5;--white:#fff;--grey:#8a9bbf;--grey-light:#b0bed8;--gold:#f0a500;}
+*{box-sizing:border-box;}
+[hidden]{display:none !important;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--white);font-family:'Barlow',sans-serif;line-height:1.6;}
+a{color:var(--cyan);}
+a:hover{color:var(--cyan-bright);}
+:focus-visible{outline:2px solid var(--white);outline-offset:3px;}
+.skip{position:absolute;left:12px;top:-40px;background:var(--cyan);color:var(--bg);padding:8px 12px;z-index:10;font-weight:700;}
+.skip:focus{top:12px;}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 22px;border-bottom:1px solid rgba(41,184,224,.22);background:rgba(33,40,68,.96);position:sticky;top:0;z-index:5;}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--white);}
+.brand img{height:52px;width:auto;object-fit:contain;}
+.brand-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:1px;font-size:18px;line-height:1;}
+.brand-sub{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:3px;color:var(--cyan);font-size:11px;}
+.top-note{font-size:13px;color:var(--grey-light);text-align:right;}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 72px;}
+.kicker{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--cyan);font-size:13px;margin:0 0 8px;}
+h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(42px,7vw,68px);line-height:.95;letter-spacing:1px;margin:0 0 12px;}
+.lede{color:var(--grey-light);font-size:17px;font-weight:300;margin:0 0 22px;}
+.banner{background:rgba(240,165,0,.12);border-left:3px solid var(--gold);padding:14px 16px;margin:0 0 22px;color:var(--grey-light);font-size:15px;}
+.card{background:var(--bg-mid);border:1px solid rgba(41,184,224,.22);border-left:3px solid var(--cyan);padding:22px;margin:0 0 22px;}
+.price{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,5vw,48px);color:var(--cyan);line-height:1;letter-spacing:1px;margin:6px 0;}
+.meta{color:var(--grey-light);font-size:15px;margin:0;}
+.steps{display:flex;gap:10px;margin:0 0 18px;padding:0;list-style:none;}
+.steps li{font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:13px;color:var(--grey);border:1px solid rgba(138,155,191,.35);padding:6px 10px;}
+.steps .on{color:var(--bg);background:var(--cyan);border-color:var(--cyan);}
+.agreement{max-height:min(70vh,640px);overflow:auto;background:#1b2340;border:1px solid rgba(41,184,224,.28);padding:22px 20px;margin:12px 0 8px;}
+.agreement h2,.agreement h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:.4px;color:var(--white);line-height:1.25;}
+.agreement h2{font-size:28px;margin:0 0 12px;}
+.agreement h3{font-size:22px;margin:28px 0 10px;color:var(--cyan);}
+.agreement p,.agreement li{font-size:15.5px;color:var(--grey-light);font-weight:400;}
+.agreement strong{color:var(--white);font-weight:650;}
+.agreement blockquote{margin:0 0 16px;padding:12px 14px;background:rgba(240,165,0,.1);border-left:3px solid var(--gold);color:var(--grey-light);}
+.agreement ul{padding-left:1.2em;}
+.agreement hr{border:0;border-top:1px solid rgba(41,184,224,.25);margin:22px 0;}
+.agreement table{width:100%;border-collapse:collapse;margin:12px 0 18px;font-size:14.5px;}
+.agreement th,.agreement td{border:1px solid rgba(176,190,216,.28);padding:8px 10px;text-align:left;vertical-align:top;color:var(--grey-light);}
+.agreement th{color:var(--white);background:rgba(41,184,224,.08);}
+.download{font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:14px;}
+form{display:flex;flex-direction:column;gap:14px;margin-top:8px;}
+.field{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:var(--grey-light);}
+.field input{font:400 16px/1.4 'Barlow',sans-serif;color:var(--white);background:var(--bg);border:1px solid rgba(176,190,216,.45);border-radius:2px;padding:12px 12px;min-height:48px;}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:16px;font-weight:400;color:var(--white);line-height:1.45;}
+.check input{width:22px;height:22px;margin-top:2px;flex:0 0 auto;accent-color:var(--cyan);}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+button,.pay-btn{appearance:none;border:0;cursor:pointer;background:var(--cyan);color:var(--bg);font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;font-size:16px;padding:14px 18px;text-decoration:none;display:inline-block;text-align:center;}
+button:hover,.pay-btn:hover{background:var(--cyan-bright);color:var(--bg);}
+button:disabled{opacity:.7;cursor:wait;}
+.status{min-height:1.4em;color:#ffd2d2;font-size:15px;margin:0;}
+.test-mode{margin:0;padding:14px 16px;border:1px solid var(--gold);color:var(--gold);font-weight:650;}
+.order{width:100%;border-collapse:collapse;margin-top:12px;font-size:15px;}
+.order th,.order td{text-align:left;padding:8px 0;border-bottom:1px solid rgba(176,190,216,.18);vertical-align:top;}
+.order th{color:var(--grey);font-weight:600;width:42%;padding-right:12px;}
+footer{border-top:1px solid rgba(41,184,224,.18);padding:22px;color:var(--grey);font-size:13px;text-align:center;}
+.chooser{padding-left:1.2em;}
+.chooser a{font-weight:600;}
+@media(max-width:640px){
+  .row2{grid-template-columns:1fr;}
+  .top{align-items:flex-start;}
+  .top-note{display:none;}
+  .agreement{padding:16px 12px;}
+  .agreement table{display:block;overflow-x:auto;}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#sign-form">Skip to the signature form</a>
+<header class="top">
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png" alt="Jellybean Row Marketing" width="408" height="409">
+    <span><span class="brand-name">JELLYBEAN ROW</span><br><span class="brand-sub">MARKETING</span></span>
+  </a>
+  <p class="top-note">Hidden test<br>709-315-6483</p>
+</header>
+<main class="wrap">
+  <p class="kicker">Step 1 of 2</p>
+  <h1>Sign, then pay.</h1>
+  <p class="lede">Work starts once the agreement is signed and the payment goes through. Prices are in Canadian dollars, plus 15% HST.</p>
+  <p class="banner">Hidden test. This agreement is a draft. A lawyer is still reviewing it, and the items in square brackets are unfinished. It is not linked from the public site.</p>
+  <noscript><p class="banner">JavaScript is required to load the service price and send your signature.</p></noscript>
+
+  <section id="service-missing" hidden>
+    <h2>Choose a service</h2>
+    <p class="lede">Open this page with <code>?service=</code> and one of the slugs below.</p>
+    <ul class="chooser" id="service-list"></ul>
+  </section>
+
+  <div id="checkout-flow" hidden>
+    <article class="card" aria-labelledby="svc-name">
+      <p class="kicker" id="svc-billing">Service</p>
+      <h2 id="svc-name">Service</h2>
+      <p class="price" id="svc-price"></p>
+      <p class="meta" id="svc-detail"></p>
+      <table class="order">
+        <tbody>
+          <tr><th scope="row">Service</th><td id="order-service"></td></tr>
+          <tr><th scope="row">Type</th><td id="order-type"></td></tr>
+          <tr><th scope="row">Fee before tax</th><td id="order-fee"></td></tr>
+          <tr><th scope="row">HST (15%)</th><td id="order-hst"></td></tr>
+          <tr><th scope="row">Total today</th><td id="order-total"></td></tr>
+          <tr><th scope="row">After today</th><td id="order-recurring"></td></tr>
+          <tr><th scope="row">Minimum term</th><td id="order-minimum"></td></tr>
+          <tr><th scope="row">Start date</th><td id="order-start"></td></tr>
+        </tbody>
+      </table>
+    </article>
+
+    <section id="step-sign" aria-labelledby="sign-heading">
+      <ol class="steps"><li class="on">1. Sign</li><li>2. Pay</li></ol>
+      <h2 id="sign-heading">Read and sign the agreement</h2>
+      <p class="meta">Agreement version: <strong id="agree-version"></strong><br>Today's date: <strong id="agree-date"></strong></p>
+      <p><a class="download" href="assets/agreement/JRM-Service-Agreement-DRAFT.md" download="JRM-Service-Agreement-DRAFT.md">Download the agreement</a></p>
+      <div class="agreement" id="agreement" tabindex="0" role="region" aria-label="JRM service agreement">
+<blockquote><p><strong>DRAFT, NOT YET FOR USE.</strong> Prepared 2026-11-27 for Jellybean Row Marketing Inc. A lawyer licensed in Newfoundland and Labrador should review this before any client sees it or signs it. Items in <strong>[square brackets]</strong> are decisions or blanks for Tyler. Remove this note and all brackets before publishing. Updated 2026-11-27 with Tyler's decisions on the cancellation notice, the 3-month minimum, early cancellation, refunds, and website changes, then again with his decisions on annual renewal, failed payments, design revisions, logo concepts, approvals, stalled projects, price-change notice, and the website file buyout, and a third time with the 5-business-day website turnaround and removal of unpriced services from Schedule B.</p></blockquote>
+<h2>Client Service Agreement</h2>
+<p><strong>Jellybean Row Marketing Inc.</strong><br>St. John's, Newfoundland and Labrador, Canada<br>Tyler@Jellybeanrowmarketing.com · 709-315-6483 · jellybeanrowmarketing.com</p>
+<p>Agreement version: [v1.0, effective date to be set]</p>
+<hr>
+<h3>1. Who this agreement is between</h3>
+<p>This agreement is between:</p>
+<ul><li><strong>Jellybean Row Marketing Inc.</strong> ("<strong>JRM</strong>", "<strong>we</strong>", "<strong>us</strong>"), a company based in St. John's, Newfoundland and Labrador; and</li><li><strong>The client</strong> named in the signature block below ("<strong>you</strong>", "<strong>the Client</strong>"). If you are signing for a business, you confirm that you are allowed to sign for it, and "you" means that business.</li></ul>
+<p>You must accept this agreement online before you can pay for a service on our website. The agreement starts on the date you accept it (the "<strong>Start Date</strong>").</p>
+<h3>2. The services</h3>
+<p>2.1 <strong>What you are buying.</strong> The service, package, or project you selected at checkout is listed in <strong>Schedule A (Order Details)</strong>. Schedule A is filled in automatically when you check out and forms part of this agreement. What each service includes is described on its page at jellybeanrowmarketing.com on the Start Date, and in any written quote or proposal we sent you. If the quote and the website differ, the written quote wins.</p>
+<p>2.2 <strong>Anything extra costs extra.</strong> Work that is not in Schedule A or your written quote is outside the scope of this agreement. If you ask for extra work, we will tell you the price first, and we will only do it once you agree in writing (email is fine).</p>
+<p>2.3 <strong>Who does the work.</strong> JRM is an independent business, not your employee. We decide how the work gets done, and we may use trusted contractors. We stay responsible for their work.</p>
+<h3>3. Fees, HST, and payment</h3>
+<p>3.1 <strong>Prices.</strong> Fees are the prices shown in Schedule A, in Canadian dollars. Our published prices are listed in <strong>Schedule B</strong>. <strong>Any service that is not listed in Schedule B is priced by a written quote, and we will only start that work once you have agreed to the quote in writing</strong> (email is fine).</p>
+<p>3.2 <strong>HST.</strong> All fees are <strong>plus HST at 15%</strong> (the Newfoundland and Labrador rate), or any other sales tax the law requires at the time.</p>
+<p>3.3 <strong>You pay upfront, through Stripe.</strong> You pay online through Stripe, our payment processor, when you check out. We do not start work until payment goes through. JRM never sees or stores your full card number; Stripe handles it.</p>
+<ul><li><strong>One-time projects</strong> (for example, logo design or a consultation): the full fee is paid at checkout, unless your written quote sets out a different payment schedule.</li><li><strong>Monthly services</strong> (for example, monthly packages, SEO, social media management, paid ads management, or the monthly website plan): the first month is paid at checkout. After that, Stripe charges the same card automatically on the same day each month until the service is cancelled under Section 4. By accepting this agreement, you authorize these recurring charges.</li><li><strong>Annual plans</strong> (for example, the annual website plan): the full year is paid upfront at checkout. <strong>The annual plan renews automatically</strong> for another year at the end of each year, and Stripe charges the same card for the next year on the renewal date. We will email you a reminder <strong>30 days before</strong> each renewal. If you do not want it to renew, tell us in writing (email is fine) before the renewal date. By accepting this agreement, you authorize these annual renewal charges.</li></ul>
+<p>3.4 <strong>Failed or late payments.</strong> If a payment fails, we will let you know. If it is not fixed within <strong>14 days</strong>, we may pause the work until it is paid. Pausing does not extend any deadline we owe you. [TYLER TO CHOOSE: whether to charge interest on overdue amounts, for example [X]% per month. Ask the lawyer about this.]</p>
+<p>3.5 <strong>Price changes.</strong> We will give you at least <strong>60 days' written notice</strong> before any price increase, including for monthly services and annual plan renewals. If you do not want to continue at the new price, you can cancel under Section 4 (or turn off an annual renewal under Section 3.3) before the new price starts.</p>
+<h3>4. Monthly services: term and cancellation</h3>
+<p>4.1 <strong>Getting started (3-month minimum term).</strong> <strong>All of our monthly services</strong> start with a <strong>3-month minimum term</strong> (the "<strong>onboarding period</strong>"). This includes the monthly packages (Starter, Basic, Growth, and Enterprise), the monthly website plan, Search Engine Optimization (SEO), Social Media Management, Paid Ads Management, and any other service billed monthly. During this time we build campaigns or your site, gather real data, and tune things.</p>
+<p>4.2 <strong>After that, it's month to month.</strong> Once the onboarding period ends, the service continues month to month until you or we cancel it.</p>
+<p>4.3 <strong>How to cancel.</strong> Either of us can cancel a monthly service by giving <strong>30 days' written notice</strong> (email to Tyler@Jellybeanrowmarketing.com is fine). You pay for the service until the notice period ends.</p>
+<p>4.4 <strong>Cancelling during the first 3 months.</strong> If you cancel during the onboarding period, you still owe the monthly fees for the rest of the 3-month minimum term. The notice period cannot be used to end the onboarding period early. You pay until whichever comes later: the end of the 3-month minimum term, or the end of the 30-day notice period. We will keep charging your card on the normal monthly schedule until then, unless we agree in writing that you can pay the remaining balance in one payment. If JRM cancels a monthly service (other than because you broke this agreement under Section 13), you only pay up to the date the service ends.</p>
+<p>4.5 <strong>After cancellation.</strong> Your last charge covers your last month of service. We stop recurring charges in Stripe when the service ends. We will hand over what you are owed under Section 8 (Ownership) and give back your access under Section 6.5.</p>
+<p>4.6 <strong>Website changes and updates (fair use).</strong> This section applies to website design and development on the monthly website plan and the annual website plan. While your plan is active, you can ask us for changes and updates to your website whenever you need them, within reason. The plan covers normal upkeep of your site; it is not unlimited design time. To keep this fair:</p>
+<ul><li><strong>How to ask.</strong> Send change requests by email to Tyler@Jellybeanrowmarketing.com. Please batch your changes, meaning you collect them and send them together in one email, instead of sending them one at a time.</li><li><strong>When we do them.</strong> We will complete reasonable requests within a normal timeframe, usually within <strong>5 business days</strong> of receiving them. Bigger requests may take longer, and we will tell you if they will.</li><li><strong>What is included.</strong> Normal changes, such as updating text, prices, hours, photos, and contact details; adding a page or blog post using your existing design; small layout tweaks; and fixing anything on the site that is not working.</li><li><strong>What is not included.</strong> A major redesign or new look; new features or functionality (for example, online store, booking, or AI features); building many new pages at once; or requests that are excessive or constant, well beyond normal upkeep of a small business website. For these, we may decline the request, schedule it over a longer period, or give you a separate quote first. We will not charge for any extra work unless you agree to the price in writing first (Section 2.2).</li></ul>
+<h3>5. One-time projects</h3>
+<p>5.1 <strong>What's included.</strong> One-time projects include what is described on the service page and in your quote. Examples:</p>
+<ul><li><strong>Logo design: $500 + HST, one-time.</strong> Includes discovery, <strong>3 first concepts</strong> (distinct design directions), revisions to your chosen direction (see 5.2), and a full file package (vector and web-ready formats).</li><li><strong>Business card design: $500 + HST, one-time.</strong> Includes a brand-matched custom design, revisions (see 5.2), and print-ready files. Printing is not included.</li><li><strong>Digital marketing consultation: $2,500 + HST, one-time.</strong> Includes a 15–20 page custom audit, a 90-day action plan, ROI projections, and at least one quick win. No retainer is required.</li></ul>
+<p>5.2 <strong>Revisions.</strong> For one-time design projects (logo, business card, and graphic design), we will keep revising the work <strong>until you are happy with it, within reason</strong>. To make revisions quick and clear, please send your feedback by email and combine your changes into one message where you can. Revisions mean changes to the design or direction you have chosen. A full redo, a new direction, or a brand-new concept after you have approved a direction is <strong>not included</strong>; we will quote it separately, and we will only start once you have agreed to the price in writing (email is fine). Changes to websites on the monthly or annual website plan are covered by Section 4.6, not by this section.</p>
+<p>5.3 <strong>Timelines.</strong> We will give you an estimated timeline when the project starts. [TYLER TO CHOOSE typical timelines, for example: logo [X] business days for first concepts; consultation [X] business days for delivery.] Timelines depend on you sending content, access, and feedback on time (see Section 6). If you are late, the timeline moves out by the same amount.</p>
+<p>5.4 <strong>Approval and completion.</strong> You approve each draft and final deliverable <strong>in writing</strong> (email counts). <strong>Silence never counts as approval</strong>: we will not treat a draft or deliverable as approved just because you have not replied. A project is complete when you approve the final deliverable in writing.</p>
+<p>5.5 <strong>Stalled projects.</strong> If you do not reply to us for <strong>30 days</strong> while we are waiting on you (for example, for feedback, content, or an approval), we may close the project, deliver the work done so far, and keep the fees you paid for the work done. If you want to restart, that may be quoted as a new project.</p>
+<h3>6. What we need from you</h3>
+<p>6.1 <strong>Access.</strong> You will give us the logins and access we reasonably need, such as your website, hosting, domain, Google Business Profile, ad accounts, social media accounts, email platform, and analytics. Where possible, you will add us as a user instead of sharing your own password.</p>
+<p>6.2 <strong>Content and information.</strong> You will send us the content we ask for (logos, photos, product details, offers, brand guidelines, and so on) and confirm it is accurate.</p>
+<p>6.3 <strong>Approvals and feedback.</strong> You will review drafts and reply within [5] business days. Nothing goes live without your approval, except where you have told us in writing that we can publish without asking, for example routine scheduled posts.</p>
+<p>6.4 <strong>Your materials.</strong> You confirm that you own, or have permission to use, everything you give us (images, text, logos, customer lists, and so on). You also confirm that your products, offers, and claims are lawful. You are responsible for following the law on your customer data and on sending commercial email, including Canada's Anti-Spam Legislation (CASL) and privacy law, for any lists you give us.</p>
+<p>6.5 <strong>Your accounts stay yours.</strong> Ad accounts, social media accounts, domains, and analytics should be in your name. When the service ends, we will remove our access or hand back control.</p>
+<h3>7. Advertising spend</h3>
+<p>7.1 <strong>Ad spend is separate.</strong> For any service that includes paid ads (the Starter, Basic, Growth, and Enterprise packages, and Paid Ads Management), our fee is a <strong>management fee only</strong>. Your advertising budget ("<strong>ad spend</strong>") is <strong>not included</strong> in our fee. You pay it directly to the ad platforms (Google, Meta, TikTok, LinkedIn, etc.) on your own payment method. We do not mark it up.</p>
+<p>7.2 <strong>Estimates only.</strong> Ad spend ranges shown on our website are estimates. You decide your budget, and we will not raise it without your approval.</p>
+<p>7.3 <strong>Platform rules.</strong> Ad platforms set their own rules and can reject ads, limit them, or suspend accounts. We will follow their rules and help you fix problems, but we are not responsible for what the platforms decide.</p>
+<h3>8. Ownership (intellectual property)</h3>
+<p>8.1 <strong>You own the final work, once it's paid for.</strong> Once you have paid in full for a deliverable, you own the final version of it, including your final logo, design files, written content, and reports we made for you. Until then, we own it, and you may not use it.</p>
+<p>8.2 <strong>What we keep.</strong> We keep ownership of our own tools, templates, code libraries, processes, know-how, and any concepts or drafts you did not choose. Where any of these are part of your final deliverable, you get a permanent licence to use them as part of that deliverable.</p>
+<p>8.3 <strong>Websites on the monthly or annual plan.</strong> While your plan is active, you have full use of the site. You always own your domain, your content, and your images. <strong>If you cancel the monthly website plan, the website goes offline at the end of your service</strong> (the end of your final paid period). Before then, you may buy a copy of the website files for a <strong>one-time fee of $2,500 + HST</strong>. The same applies if an annual website plan ends and is not renewed.</p>
+<p>8.4 <strong>Third-party items.</strong> Stock photos, fonts, plugins, and software from other companies are covered by their own licences. We will tell you if any of them need a paid licence in your name.</p>
+<p>8.5 <strong>Our portfolio.</strong> We may show the work we did for you (and your business name and logo) in our portfolio, on our website, in case studies, and on social media. <strong>If you do not want us to, tick the opt-out box in the signature block or email us at any time,</strong> and we will stop using it going forward. We will never share your confidential information in our portfolio.</p>
+<h3>9. No guarantee of results</h3>
+<p>Marketing results depend on things we don't control, such as search engine and platform algorithms, competitors, the market, your offer and prices, and how quickly you act on leads. <strong>We do not guarantee any specific search ranking, number of followers, engagement, leads, sales, return on ad spend, or other result.</strong> Any figures on our website or in proposals (such as engagement growth, ROI, or time to results) are estimates or industry benchmarks, not promises. We do promise to do the work carefully and professionally, the way a skilled marketing agency would.</p>
+<h3>10. Confidentiality and privacy</h3>
+<p>10.1 Each of us will keep the other's confidential information private. This includes business plans, customer data, pricing, results, passwords, and anything marked or clearly meant to be confidential. We will use it only to provide the services, and share it only with staff or contractors who need it and who are bound to keep it confidential.</p>
+<p>10.2 This does not cover information that is already public, that the other party already had, or that the law requires someone to disclose.</p>
+<p>10.3 We handle personal information in line with Canada's <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA). We keep passwords and access secure, and we stop using them when the service ends.</p>
+<p>10.4 These duties continue after this agreement ends.</p>
+<h3>11. Limit of liability</h3>
+<p>11.1 <strong>Cap.</strong> As far as the law allows, JRM's total liability for any claim arising from this agreement or the services is limited to <strong>the fees you actually paid JRM in the [12] months before the claim arose</strong> (for a one-time project, the fee paid for that project). [TYLER TO CONFIRM 12 months.]</p>
+<p>11.2 <strong>No indirect losses.</strong> Neither of us is responsible to the other for indirect or consequential losses, such as lost profits, lost revenue, lost data, or harm to reputation.</p>
+<p>11.3 <strong>Your responsibility.</strong> You are responsible for claims against JRM that come from materials or instructions you provided (for example, an image you did not have the rights to, or an advertising claim you asked us to make).</p>
+<p>11.4 <strong>Exceptions.</strong> This section does not limit liability for fraud, wilful misconduct, or anything else the law does not allow to be limited.</p>
+<h3>12. Refunds</h3>
+<p><strong>No refunds once work has started.</strong> Fees are non-refundable once work has started, because our time is booked and spent for you. This applies to one-time projects, monthly services (including fees owed for the rest of the 3-month minimum term under Section 4.4), and annual plans. You can cancel a monthly service under Section 4 to stop future charges.</p>
+<p>If JRM ends this agreement without cause (Section 13.2) and has not delivered work you already paid for, we will refund the unused portion of what you paid.</p>
+<p>Nothing in this agreement takes away any right you have under consumer protection law that cannot be waived by contract, including the Newfoundland and Labrador <em>Consumer Protection and Business Practices Act</em>.</p>
+<h3>13. Ending the agreement</h3>
+<p>13.1 <strong>Monthly services</strong> end as described in Section 4. <strong>One-time projects</strong> end when they are complete or closed (Sections 5.4 and 5.5).</p>
+<p>13.2 <strong>Either of us</strong> can end this agreement by written notice if the other:</p>
+<ul><li>seriously breaks this agreement and does not fix it within <strong>[10] days</strong> of being told in writing; or</li><li>becomes bankrupt or insolvent, or stops doing business.</li></ul>
+<p>13.3 <strong>JRM may also</strong> end or pause the services right away if payment is more than <strong>14 days</strong> overdue, or if you ask us to do something unlawful, misleading, or against ad platform rules, or if you treat our team abusively.</p>
+<p>13.4 <strong>When the agreement ends:</strong> you pay for all work done and fees owed up to the end date; we hand over the paid-for deliverables under Section 8; and each of us returns or deletes the other's confidential information when asked. Sections 3 (amounts owed), 8, 9, 10, 11, 12, 14, and 15 continue after the agreement ends.</p>
+<h3>14. Governing law</h3>
+<p>This agreement is governed by the laws of the Province of Newfoundland and Labrador and the federal laws of Canada that apply there. Any dispute will be handled by the courts of Newfoundland and Labrador. Before going to court, we both agree to try in good faith to resolve the issue by talking it through for at least [30] days.</p>
+<h3>15. General</h3>
+<p>15.1 <strong>Whole agreement.</strong> This agreement, Schedule A, and any written quote make up the whole agreement between us about the services. Any change must be in writing and agreed by both of us (email is fine).</p>
+<p>15.2 <strong>Events outside our control.</strong> Neither of us is responsible for delays caused by events beyond our reasonable control, such as storms, power or internet outages, or platform outages. This does not excuse paying fees that are already owed.</p>
+<p>15.3 <strong>Assignment.</strong> You may not transfer this agreement to someone else without our written consent. We may transfer it to a business that takes over JRM.</p>
+<p>15.4 <strong>Notices.</strong> Notices must be in writing and sent by email: to JRM at Tyler@Jellybeanrowmarketing.com, and to you at the email address in the signature block.</p>
+<p>15.5 <strong>If part is invalid.</strong> If any part of this agreement is found to be unenforceable, the rest still applies.</p>
+<h3>16. Electronic signature and consent</h3>
+<p>16.1 You agree to sign this agreement electronically and to receive it, and any notices under it, electronically. This is permitted under the Newfoundland and Labrador <em>Electronic Commerce Act</em>, SNL 2001, c. E-5.2.</p>
+<p>16.2 By typing your name and ticking "I agree" below, you are signing this agreement. That has the same legal effect as a handwritten signature.</p>
+<p>16.3 We will keep an electronic record of your acceptance, including your typed name, business, email, the date and time, the version of this agreement, and your IP address. We will email you a copy. You can ask for another copy at any time.</p>
+<p>16.4 JRM's acceptance is shown by Tyler York's typed signature below, and by our confirmation email after your payment goes through.</p>
+<hr>
+<h3>Signature</h3>
+<p><strong>CLIENT</strong></p>
+<table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>Full name (typed)</td><td>______________________</td></tr><tr><td>Title / role</td><td>______________________</td></tr><tr><td>Business name</td><td>______________________</td></tr><tr><td>Email</td><td>______________________</td></tr><tr><td>Phone</td><td>______________________</td></tr><tr><td>Date</td><td>______________________ (filled in automatically)</td></tr></tbody></table>
+<p class="check-line">☐ <strong>I agree.</strong> I have read and agree to this Client Service Agreement, including Schedule A. I am authorized to sign for the business named above, and I consent to signing electronically.</p>
+<p class="check-line">☐ I authorize Jellybean Row Marketing Inc. to charge my payment method through Stripe for the fees in Schedule A, including recurring monthly charges for monthly services, until they are cancelled under Section 4.</p>
+<p class="check-line">☐ <em>(Optional)</em> <strong>Portfolio opt-out:</strong> Please do <strong>not</strong> show my work in JRM's portfolio or case studies.</p>
+<p><strong>JELLYBEAN ROW MARKETING INC.</strong></p>
+<p>Tyler York, CEO<br>Signature (typed): Tyler York<br>Date: (date of Client acceptance)</p>
+<hr>
+<h3>Schedule A: Order details (filled in at checkout)</h3>
+<table><thead><tr><th>Field</th><th>Details</th></tr></thead><tbody><tr><td>Order / Stripe reference</td><td>{{stripe_checkout_id}}</td></tr><tr><td>Service selected</td><td>{{service_name}}</td></tr><tr><td>Type</td><td>{{One-time project / Monthly service / Annual plan}}</td></tr><tr><td>Fee (before tax)</td><td>{{amount}} CAD</td></tr><tr><td>HST (15%)</td><td>{{hst_amount}} CAD</td></tr><tr><td>Total charged today</td><td>{{total}} CAD</td></tr><tr><td>Recurring charge (if monthly)</td><td>{{amount + HST}} CAD per month, starting {{next_billing_date}}</td></tr><tr><td>Minimum term (if any)</td><td>{{3 months (all monthly services) / none (one-time projects and annual plans)}}</td></tr><tr><td>Cancellation notice (monthly services)</td><td>30 days' written notice</td></tr><tr><td>Revisions (one-time design projects)</td><td>Until you are happy, within reason (Section 5.2)</td></tr><tr><td>Ad platforms (if paid ads)</td><td>{{platforms}}. Ad spend is paid by the Client directly to the platforms.</td></tr><tr><td>Written quote / proposal reference (if any)</td><td>{{quote_reference}}</td></tr><tr><td>Start Date</td><td>{{acceptance_date}}</td></tr></tbody></table>
+<h3>Schedule B: Published prices (from jellybeanrowmarketing.com as of 2026-11-27)</h3>
+<p>All prices are in CAD, <strong>plus 15% HST</strong>. Any service not listed below (for example, graphic design) is priced by a written quote, and work starts only after the Client agrees to that quote in writing (see Section 3.1).</p>
+<p><strong>Monthly packages</strong> (3-month minimum term, then month to month with 30 days' notice; ad spend paid separately)</p>
+<table><thead><tr><th>Package</th><th>Price</th></tr></thead><tbody><tr><td>Starter</td><td>$2,500 / month</td></tr><tr><td>Basic</td><td>$4,000 / month</td></tr><tr><td>Growth</td><td>$7,500 / month</td></tr><tr><td>Enterprise</td><td>$10,000 / month</td></tr></tbody></table>
+<p><strong>Standalone monthly services</strong> (3-month minimum term, then month to month with 30 days' notice)</p>
+<table><thead><tr><th>Service</th><th>Price</th></tr></thead><tbody><tr><td>Search Engine Optimization (SEO)</td><td>Starting at $1,500 / month</td></tr><tr><td>Paid Ads Management, first platform</td><td>$1,500 / month</td></tr><tr><td>Paid Ads Management, each additional platform</td><td>+ $700 / month</td></tr><tr><td>Social Media Management, Essential</td><td>$2,500 / month</td></tr><tr><td>Social Media Management, Premium</td><td>$5,000 / month</td></tr><tr><td>Website Design &amp; Development, monthly plan (hosting, maintenance, updates)</td><td>$350 / month (3-month minimum term, then month to month)</td></tr><tr><td>Website Design &amp; Development, annual plan</td><td>$3,360 / year, paid upfront</td></tr></tbody></table>
+<p><strong>One-time services</strong></p>
+<table><thead><tr><th>Service</th><th>Price</th></tr></thead><tbody><tr><td>Logo Design</td><td>$500 one-time</td></tr><tr><td>Business Card Design</td><td>$500 one-time</td></tr><tr><td>Digital Marketing Consultation</td><td>$2,500 one-time</td></tr><tr><td>Website file buyout (Section 8.3)</td><td>$2,500 one-time</td></tr></tbody></table>
+      </div>
+
+      <form id="sign-form" method="post" novalidate>
+        <div class="row2">
+          <label class="field">Full legal name
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label class="field">Business name
+            <input name="business" type="text" autocomplete="organization" required>
+          </label>
+        </div>
+        <label class="field">Title / role <span style="font-weight:400">(optional)</span>
+          <input name="title" type="text" autocomplete="organization-title">
+        </label>
+        <div class="row2">
+          <label class="field">Email
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label class="field">Phone
+            <input name="phone" type="tel" autocomplete="tel" required>
+          </label>
+        </div>
+        <label class="check">
+          <input name="agree" type="checkbox" required>
+          <span>I have read and agree to the JRM Service Agreement</span>
+        </label>
+        <label class="check" id="minimum-wrap" hidden>
+          <input id="minimum-term" name="minimum-term" type="checkbox">
+          <span>I confirm this monthly service has a 3-month minimum term, then continues month to month with 30 days' notice to cancel.</span>
+        </label>
+        <label class="check">
+          <input name="portfolio opt-out" type="checkbox">
+          <span>Optional: do not show my work in JRM's portfolio or case studies.</span>
+        </label>
+        <label class="field">Typed signature (your full legal name)
+          <input name="typed signature" type="text" autocomplete="name" required aria-describedby="sign-hint">
+        </label>
+        <p class="meta" id="sign-hint">Typing your full legal name is your electronic signature. It has to match the full legal name above. Date: <span id="agree-date-2"></span>. Version: <span id="agree-version-2"></span>.</p>
+        <button type="submit">Sign and continue to payment</button>
+        <p class="status" id="form-status" role="alert"></p>
+      </form>
+    </section>
+
+    <section id="step-pay" hidden aria-labelledby="pay-heading">
+      <ol class="steps"><li>1. Sign</li><li class="on">2. Pay</li></ol>
+      <h2 id="pay-heading" tabindex="-1">Thanks, your agreement is signed. Next, pay to start your work.</h2>
+      <p class="lede"><span id="pay-service"></span> · <span id="pay-price"></span>. Receipt email: <span id="pay-email"></span>.</p>
+      <div id="pay-slot"></div>
+    </section>
+  </div>
+</main>
+<footer>© 2026 Jellybean Row Marketing Inc. · St. John's, NL · <a href="mailto:Tyler@Jellybeanrowmarketing.com">Tyler@Jellybeanrowmarketing.com</a> · <a href="tel:7093156483">709-315-6483</a></footer>
+<script src="assets/js/services-checkout.js"></script>
+<script src="assets/js/get-started.js"></script>
+</body>
+</html>
