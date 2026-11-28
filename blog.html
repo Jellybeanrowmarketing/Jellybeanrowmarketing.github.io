@@ -163,7 +163,7 @@ body{
   to{opacity:1;transform:scale(1);}
 }
 .sp-logo img{
-  width:240px;
+  display:block;width:240px;height:auto;object-fit:contain;
   animation:spLogoPulse 1.5s 1.2s ease-in-out infinite alternate;
 }
 @keyframes spLogoPulse{
@@ -223,7 +223,7 @@ nav{
 }
 .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
 .nav-logo{
-  width:44px;height:44px;object-fit:contain;
+  width:44px;height:auto;object-fit:contain;
   animation:navLogoSpin 0.9s 0.2s cubic-bezier(0.34,1.56,0.64,1) both;
 }
 @keyframes navLogoSpin{
@@ -372,7 +372,7 @@ nav{
 .about-visual{position:relative;display:flex;flex-direction:column;align-items:center;}
 /* Logo is transparent PNG — blends seamlessly */
 .about-logo{
-  width:260px;
+  width:260px;height:auto;object-fit:contain;
   filter:drop-shadow(0 0 40px rgba(41,184,224,0.35));
   animation:floatLogo 5s ease-in-out infinite;
 }
