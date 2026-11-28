@@ -1,14 +1,14 @@
 /* Hidden checkout. Prices match the published site and Schedule B of the
    draft agreement. paymentPlaceholder is only the fallback when a link is missing. */
 window.JRM_CHECKOUT = {
-  agreementVersion: "DRAFT v1.0 (prepared 2026-11-27, effective date not set)",
-  agreementFile: "assets/agreement/JRM-Service-Agreement-DRAFT.md",
+  agreementVersion: "Version 1.0, effective November 28, 2026",
+  agreementFile: "assets/agreement/JRM-Service-Agreement.pdf",
   formspree: "https://formspree.io/f/xvzvandr",
   paymentPlaceholder: "STRIPE_PAYMENT_LINK_TODO",
   services: {
     starter: {
       name: "Starter",
-      priceLabel: "$2,500/mo + HST",
+      priceLabel: "$2,500/mo + HST where applicable",
       amount: 2500,
       billing: "monthly",
       detail: "Monthly package. 3-month minimum term, then month to month with 30 days' notice. Ad spend is paid by you to the ad platforms.",
@@ -16,7 +16,7 @@ window.JRM_CHECKOUT = {
     },
     basic: {
       name: "Basic",
-      priceLabel: "$4,000/mo + HST",
+      priceLabel: "$4,000/mo + HST where applicable",
       amount: 4000,
       billing: "monthly",
       detail: "Monthly package. 3-month minimum term, then month to month with 30 days' notice. Ad spend is paid by you to the ad platforms.",
@@ -24,7 +24,7 @@ window.JRM_CHECKOUT = {
     },
     growth: {
       name: "Growth",
-      priceLabel: "$7,500/mo + HST",
+      priceLabel: "$7,500/mo + HST where applicable",
       amount: 7500,
       billing: "monthly",
       detail: "Monthly package. 3-month minimum term, then month to month with 30 days' notice. Ad spend is paid by you to the ad platforms.",
@@ -32,7 +32,7 @@ window.JRM_CHECKOUT = {
     },
     enterprise: {
       name: "Enterprise",
-      priceLabel: "$10,000/mo + HST",
+      priceLabel: "$10,000/mo + HST where applicable",
       amount: 10000,
       billing: "monthly",
       detail: "Monthly package. 3-month minimum term, then month to month with 30 days' notice. Ad spend is paid by you to the ad platforms.",
@@ -40,7 +40,7 @@ window.JRM_CHECKOUT = {
     },
     seo: {
       name: "SEO",
-      priceLabel: "$1,500/mo + HST",
+      priceLabel: "$1,500/mo + HST where applicable",
       amount: 1500,
       billing: "monthly",
       detail: "Search Engine Optimization, at the published starting price. 3-month minimum term, then month to month with 30 days' notice. A written quote wins if it sets a different fee.",
@@ -48,15 +48,15 @@ window.JRM_CHECKOUT = {
     },
     "paid-ads": {
       name: "Paid ads",
-      priceLabel: "$1,500/mo + HST (first platform)",
+      priceLabel: "$1,500/mo + HST where applicable (first platform)",
       amount: 1500,
       billing: "monthly",
-      detail: "Paid Ads Management for the first platform. 3-month minimum term, then month to month with 30 days' notice. Each added platform is + $700/mo + HST and is not part of this checkout. Ad spend is paid by you to the ad platforms.",
+      detail: "Paid Ads Management for the first platform. 3-month minimum term, then month to month with 30 days' notice. Each added platform is + $700/mo + HST where applicable and is not part of this checkout. Ad spend is paid by you to the ad platforms.",
       paymentLink: "https://buy.stripe.com/9B64gB4ya52K9CGe0Kd3i0M"
     },
     "social-essential": {
       name: "Social media Essential",
-      priceLabel: "$2,500/mo + HST",
+      priceLabel: "$2,500/mo + HST where applicable",
       amount: 2500,
       billing: "monthly",
       detail: "Social Media Management, Essential. 3-month minimum term, then month to month with 30 days' notice.",
@@ -64,7 +64,7 @@ window.JRM_CHECKOUT = {
     },
     "social-premium": {
       name: "Social media Premium",
-      priceLabel: "$5,000/mo + HST",
+      priceLabel: "$5,000/mo + HST where applicable",
       amount: 5000,
       billing: "monthly",
       detail: "Social Media Management, Premium. 3-month minimum term, then month to month with 30 days' notice.",
@@ -72,7 +72,7 @@ window.JRM_CHECKOUT = {
     },
     "web-design-monthly": {
       name: "Web design monthly",
-      priceLabel: "$350/mo + HST",
+      priceLabel: "$350/mo + HST where applicable",
       amount: 350,
       billing: "monthly",
       detail: "Website Design & Development, monthly plan. 3-month minimum term, then month to month with 30 days' notice. Updates are within reason (fair use).",
@@ -80,7 +80,7 @@ window.JRM_CHECKOUT = {
     },
     "web-design-annual": {
       name: "Web design annual",
-      priceLabel: "$3,360/yr + HST",
+      priceLabel: "$3,360/yr + HST where applicable",
       amount: 3360,
       billing: "annual",
       detail: "Website Design & Development, annual plan, paid upfront. It renews each year unless you tell us in writing before the renewal date. We email a reminder 30 days before renewal.",
@@ -88,7 +88,7 @@ window.JRM_CHECKOUT = {
     },
     "logo-design": {
       name: "Logo",
-      priceLabel: "$500 + HST",
+      priceLabel: "$500 + HST where applicable",
       amount: 500,
       billing: "once",
       detail: "Logo design, one-time. Includes 3 initial concepts and revisions until you're happy, within reason.",
@@ -96,7 +96,7 @@ window.JRM_CHECKOUT = {
     },
     "business-cards": {
       name: "Business cards",
-      priceLabel: "$500 + HST",
+      priceLabel: "$500 + HST where applicable",
       amount: 500,
       billing: "once",
       detail: "Business card design, one-time. Printing is not included. Revisions until you're happy, within reason.",
@@ -104,7 +104,7 @@ window.JRM_CHECKOUT = {
     },
     consultation: {
       name: "Consultation",
-      priceLabel: "$2,500 + HST",
+      priceLabel: "$2,500 + HST where applicable",
       amount: 2500,
       billing: "once",
       detail: "Digital marketing consultation, one-time.",

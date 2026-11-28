@@ -1,12 +1,10 @@
-> **DRAFT, NOT YET FOR USE.** Prepared 2026-11-27 for Jellybean Row Marketing Inc. A lawyer licensed in Newfoundland and Labrador should review this before any client sees it or signs it. Items in **[square brackets]** are decisions or blanks for Tyler. Remove this note and all brackets before publishing. Updated 2026-11-27 with Tyler's decisions on the cancellation notice, the 3-month minimum, early cancellation, refunds, and website changes, then again with his decisions on annual renewal, failed payments, design revisions, logo concepts, approvals, stalled projects, price-change notice, and the website file buyout, and a third time with the 5-business-day website turnaround and removal of unpriced services from Schedule B.
-
 # Client Service Agreement
 
 **Jellybean Row Marketing Inc.**
 St. John's, Newfoundland and Labrador, Canada
 Tyler@Jellybeanrowmarketing.com · 709-315-6483 · jellybeanrowmarketing.com
 
-Agreement version: [v1.0, effective date to be set]
+Agreement version: 1.0 · Effective November 28, 2026
 
 ---
 
@@ -31,7 +29,7 @@ You must accept this agreement online before you can pay for a service on our we
 
 3.1 **Prices.** Fees are the prices shown in Schedule A, in Canadian dollars. Our published prices are listed in **Schedule B**. **Any service that is not listed in Schedule B is priced by a written quote, and we will only start that work once you have agreed to the quote in writing** (email is fine).
 
-3.2 **HST.** All fees are **plus HST at 15%** (the Newfoundland and Labrador rate), or any other sales tax the law requires at the time.
+3.2 **HST.** All fees are **plus HST where applicable** (currently 15% in Newfoundland and Labrador), or any other sales tax the law requires at the time. We only charge HST if JRM is registered to collect it, and any HST charged is shown separately in Schedule A and on your receipt.
 
 3.3 **You pay upfront, through Stripe.** You pay online through Stripe, our payment processor, when you check out. We do not start work until payment goes through. JRM never sees or stores your full card number; Stripe handles it.
 
@@ -39,7 +37,7 @@ You must accept this agreement online before you can pay for a service on our we
 - **Monthly services** (for example, monthly packages, SEO, social media management, paid ads management, or the monthly website plan): the first month is paid at checkout. After that, Stripe charges the same card automatically on the same day each month until the service is cancelled under Section 4. By accepting this agreement, you authorize these recurring charges.
 - **Annual plans** (for example, the annual website plan): the full year is paid upfront at checkout. **The annual plan renews automatically** for another year at the end of each year, and Stripe charges the same card for the next year on the renewal date. We will email you a reminder **30 days before** each renewal. If you do not want it to renew, tell us in writing (email is fine) before the renewal date. By accepting this agreement, you authorize these annual renewal charges.
 
-3.4 **Failed or late payments.** If a payment fails, we will let you know. If it is not fixed within **14 days**, we may pause the work until it is paid. Pausing does not extend any deadline we owe you. [TYLER TO CHOOSE: whether to charge interest on overdue amounts, for example [X]% per month. Ask the lawyer about this.]
+3.4 **Failed or late payments.** If a payment fails, we will let you know. If it is not fixed within **14 days**, we may pause the work until it is paid. Pausing does not extend any deadline we owe you. Overdue amounts bear interest at **2% per month (26.82% per year)**, calculated and compounded monthly, from the due date until paid.
 
 3.5 **Price changes.** We will give you at least **60 days' written notice** before any price increase, including for monthly services and annual plan renewals. If you do not want to continue at the new price, you can cancel under Section 4 (or turn off an annual renewal under Section 3.3) before the new price starts.
 
@@ -66,13 +64,13 @@ You must accept this agreement online before you can pay for a service on our we
 
 5.1 **What's included.** One-time projects include what is described on the service page and in your quote. Examples:
 
-- **Logo design: $500 + HST, one-time.** Includes discovery, **3 first concepts** (distinct design directions), revisions to your chosen direction (see 5.2), and a full file package (vector and web-ready formats).
-- **Business card design: $500 + HST, one-time.** Includes a brand-matched custom design, revisions (see 5.2), and print-ready files. Printing is not included.
-- **Digital marketing consultation: $2,500 + HST, one-time.** Includes a 15–20 page custom audit, a 90-day action plan, ROI projections, and at least one quick win. No retainer is required.
+- **Logo design: $500 + HST where applicable, one-time.** Includes discovery, **3 first concepts** (distinct design directions), revisions to your chosen direction (see 5.2), and a full file package (vector and web-ready formats).
+- **Business card design: $500 + HST where applicable, one-time.** Includes a brand-matched custom design, revisions (see 5.2), and print-ready files. Printing is not included.
+- **Digital marketing consultation: $2,500 + HST where applicable, one-time.** Includes a 15–20 page custom audit, a 90-day action plan, ROI projections, and at least one quick win. No retainer is required.
 
 5.2 **Revisions.** For one-time design projects (logo, business card, and graphic design), we will keep revising the work **until you are happy with it, within reason**. To make revisions quick and clear, please send your feedback by email and combine your changes into one message where you can. Revisions mean changes to the design or direction you have chosen. A full redo, a new direction, or a brand-new concept after you have approved a direction is **not included**; we will quote it separately, and we will only start once you have agreed to the price in writing (email is fine). Changes to websites on the monthly or annual website plan are covered by Section 4.6, not by this section.
 
-5.3 **Timelines.** We will give you an estimated timeline when the project starts. [TYLER TO CHOOSE typical timelines, for example: logo [X] business days for first concepts; consultation [X] business days for delivery.] Timelines depend on you sending content, access, and feedback on time (see Section 6). If you are late, the timeline moves out by the same amount.
+5.3 **Timelines.** We will give you an estimated timeline when the project starts. Project timelines are as set out in each project's written quote or order. Timelines depend on you sending content, access, and feedback on time (see Section 6). If you are late, the timeline moves out by the same amount.
 
 5.4 **Approval and completion.** You approve each draft and final deliverable **in writing** (email counts). **Silence never counts as approval**: we will not treat a draft or deliverable as approved just because you have not replied. A project is complete when you approve the final deliverable in writing.
 
@@ -84,7 +82,7 @@ You must accept this agreement online before you can pay for a service on our we
 
 6.2 **Content and information.** You will send us the content we ask for (logos, photos, product details, offers, brand guidelines, and so on) and confirm it is accurate.
 
-6.3 **Approvals and feedback.** You will review drafts and reply within [5] business days. Nothing goes live without your approval, except where you have told us in writing that we can publish without asking, for example routine scheduled posts.
+6.3 **Approvals and feedback.** You will review drafts and reply within 5 business days. Nothing goes live without your approval, except where you have told us in writing that we can publish without asking, for example routine scheduled posts.
 
 6.4 **Your materials.** You confirm that you own, or have permission to use, everything you give us (images, text, logos, customer lists, and so on). You also confirm that your products, offers, and claims are lawful. You are responsible for following the law on your customer data and on sending commercial email, including Canada's Anti-Spam Legislation (CASL) and privacy law, for any lists you give us.
 
@@ -104,7 +102,7 @@ You must accept this agreement online before you can pay for a service on our we
 
 8.2 **What we keep.** We keep ownership of our own tools, templates, code libraries, processes, know-how, and any concepts or drafts you did not choose. Where any of these are part of your final deliverable, you get a permanent licence to use them as part of that deliverable.
 
-8.3 **Websites on the monthly or annual plan.** While your plan is active, you have full use of the site. You always own your domain, your content, and your images. **If you cancel the monthly website plan, the website goes offline at the end of your service** (the end of your final paid period). Before then, you may buy a copy of the website files for a **one-time fee of $2,500 + HST**. The same applies if an annual website plan ends and is not renewed.
+8.3 **Websites on the monthly or annual plan.** While your plan is active, you have full use of the site. You always own your domain, your content, and your images. **If you cancel the monthly website plan, the website goes offline at the end of your service** (the end of your final paid period). Before then, you may buy a copy of the website files for a **one-time fee of $2,500 + HST where applicable**. The same applies if an annual website plan ends and is not renewed.
 
 8.4 **Third-party items.** Stock photos, fonts, plugins, and software from other companies are covered by their own licences. We will tell you if any of them need a paid licence in your name.
 
@@ -120,13 +118,13 @@ Marketing results depend on things we don't control, such as search engine and p
 
 10.2 This does not cover information that is already public, that the other party already had, or that the law requires someone to disclose.
 
-10.3 We handle personal information in line with Canada's *Personal Information Protection and Electronic Documents Act* (PIPEDA). We keep passwords and access secure, and we stop using them when the service ends.
+10.3 We handle personal information in line with Canada's *Personal Information Protection and Electronic Documents Act* (PIPEDA). We keep passwords and access secure, and we stop using them when the service ends. To ask about the personal information we hold about you, or to access or correct it, contact Tyler York at Tyler@Jellybeanrowmarketing.com.
 
 10.4 These duties continue after this agreement ends.
 
 ## 11. Limit of liability
 
-11.1 **Cap.** As far as the law allows, JRM's total liability for any claim arising from this agreement or the services is limited to **the fees you actually paid JRM in the [12] months before the claim arose** (for a one-time project, the fee paid for that project). [TYLER TO CONFIRM 12 months.]
+11.1 **Cap.** As far as the law allows, JRM's total liability for any claim arising from this agreement or the services is limited to **the fees you actually paid JRM in the 12 months before the claim arose** (for a one-time project, the fee paid for that project).
 
 11.2 **No indirect losses.** Neither of us is responsible to the other for indirect or consequential losses, such as lost profits, lost revenue, lost data, or harm to reputation.
 
@@ -148,7 +146,7 @@ Nothing in this agreement takes away any right you have under consumer protectio
 
 13.2 **Either of us** can end this agreement by written notice if the other:
 
-- seriously breaks this agreement and does not fix it within **[10] days** of being told in writing; or
+- seriously breaks this agreement and does not fix it within **10 days** of being told in writing; or
 - becomes bankrupt or insolvent, or stops doing business.
 
 13.3 **JRM may also** end or pause the services right away if payment is more than **14 days** overdue, or if you ask us to do something unlawful, misleading, or against ad platform rules, or if you treat our team abusively.
@@ -157,7 +155,7 @@ Nothing in this agreement takes away any right you have under consumer protectio
 
 ## 14. Governing law
 
-This agreement is governed by the laws of the Province of Newfoundland and Labrador and the federal laws of Canada that apply there. Any dispute will be handled by the courts of Newfoundland and Labrador. Before going to court, we both agree to try in good faith to resolve the issue by talking it through for at least [30] days.
+This agreement is governed by the laws of the Province of Newfoundland and Labrador and the federal laws of Canada that apply there. Any dispute will be handled by the courts of Newfoundland and Labrador. Before going to court, we both agree to try in good faith to resolve the issue by talking it through for at least 30 days.
 
 ## 15. General
 
@@ -175,9 +173,9 @@ This agreement is governed by the laws of the Province of Newfoundland and Labra
 
 16.1 You agree to sign this agreement electronically and to receive it, and any notices under it, electronically. This is permitted under the Newfoundland and Labrador *Electronic Commerce Act*, SNL 2001, c. E-5.2.
 
-16.2 By typing your name and ticking "I agree" below, you are signing this agreement. That has the same legal effect as a handwritten signature.
+16.2 Before you accept, you can read this agreement and your order details in Schedule A, download or print them, correct any errors, and choose to accept or decline. By typing your name and ticking "I agree" below, you are signing this agreement. That has the same legal effect as a handwritten signature.
 
-16.3 We will keep an electronic record of your acceptance, including your typed name, business, email, the date and time, the version of this agreement, and your IP address. We will email you a copy. You can ask for another copy at any time.
+16.3 We will keep an electronic record of your acceptance, including your typed name, business, email, the date and time, the version of this agreement, and your IP address. We will email you a copy of this agreement, with your name and the date you accepted it, within 15 days (usually right away). You can ask for another copy at any time.
 
 16.4 JRM's acceptance is shown by Tyler York's typed signature below, and by our confirmation email after your payment goes through.
 
@@ -218,9 +216,9 @@ Date: (date of Client acceptance)
 | Service selected | {{service_name}} |
 | Type | {{One-time project / Monthly service / Annual plan}} |
 | Fee (before tax) | {{amount}} CAD |
-| HST (15%) | {{hst_amount}} CAD |
+| HST (where applicable) | {{hst_amount}} CAD |
 | Total charged today | {{total}} CAD |
-| Recurring charge (if monthly) | {{amount + HST}} CAD per month, starting {{next_billing_date}} |
+| Recurring charge (if monthly) | {{amount + any applicable HST}} CAD per month, starting {{next_billing_date}} |
 | Minimum term (if any) | {{3 months (all monthly services) / none (one-time projects and annual plans)}} |
 | Cancellation notice (monthly services) | 30 days' written notice |
 | Revisions (one-time design projects) | Until you are happy, within reason (Section 5.2) |
@@ -230,7 +228,7 @@ Date: (date of Client acceptance)
 
 ## Schedule B: Published prices (from jellybeanrowmarketing.com as of 2026-11-27)
 
-All prices are in CAD, **plus 15% HST**. Any service not listed below (for example, graphic design) is priced by a written quote, and work starts only after the Client agrees to that quote in writing (see Section 3.1).
+All prices are in CAD, **plus HST where applicable** (see Section 3.2). Any service not listed below (for example, graphic design) is priced by a written quote, and work starts only after the Client agrees to that quote in writing (see Section 3.1).
 
 **Monthly packages** (3-month minimum term, then month to month with 30 days' notice; ad spend paid separately)
 

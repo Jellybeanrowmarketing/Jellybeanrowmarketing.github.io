@@ -68,16 +68,16 @@
     var recurring = "None.";
     var minimum = "None.";
     if (item.billing === "monthly") {
-      recurring = money(total) + " CAD per month, including HST, starting " + plusOneMonth(new Date()) + ".";
+      recurring = money(total) + " CAD per month, including HST where applicable, starting " + plusOneMonth(new Date()) + ".";
       minimum = "3 months, then month to month with 30 days' written notice.";
     } else if (item.billing === "annual") {
-      recurring = "Not a monthly charge. Renews at " + money(total) + " CAD, including HST, on each anniversary unless cancelled in writing before the renewal date.";
+      recurring = "Not a monthly charge. Renews at " + money(total) + " CAD, including HST where applicable, on each anniversary unless cancelled in writing before the renewal date.";
     }
-    setScheduleCell("Order / Stripe reference", "Added after payment. This test does not create a Stripe charge.");
+    setScheduleCell("Order / Stripe reference", "Shown on your Stripe receipt after payment.");
     setScheduleCell("Service selected", item.name);
     setScheduleCell("Type", billingLabel(item.billing));
     setScheduleCell("Fee (before tax)", money(item.amount) + " CAD");
-    setScheduleCell("HST (15%)", money(tax) + " CAD");
+    setScheduleCell("HST (where applicable)", money(tax) + " CAD (15% in Newfoundland and Labrador, where it applies)");
     setScheduleCell("Total charged today", money(total) + " CAD");
     setScheduleCell("Recurring charge (if monthly)", recurring);
     setScheduleCell("Minimum term (if any)", minimum);
@@ -137,10 +137,10 @@
   var recurring = document.getElementById("order-recurring");
   var minimum = document.getElementById("order-minimum");
   if (service.billing === "monthly") {
-    recurring.textContent = money(total) + " CAD per month, including HST, after the first month.";
+    recurring.textContent = money(total) + " CAD per month, including HST where applicable, after the first month.";
     minimum.textContent = "3 months, then month to month with 30 days' written notice.";
   } else if (service.billing === "annual") {
-    recurring.textContent = "Renews yearly at " + money(total) + " CAD, including HST, unless you cancel the renewal in writing before the renewal date.";
+    recurring.textContent = "Renews yearly at " + money(total) + " CAD, including HST where applicable, unless you cancel the renewal in writing before the renewal date.";
     minimum.textContent = "None. The year is paid upfront.";
   } else {
     recurring.textContent = "None. This is a one-time fee.";

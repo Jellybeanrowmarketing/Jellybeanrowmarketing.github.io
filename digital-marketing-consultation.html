@@ -312,6 +312,7 @@ article .faq h3{color:var(--white);font-size:clamp(18px,2.6vw,22px);margin-top:2
 .price-amt small{display:block;font-family:'Barlow',sans-serif;font-size:13px;font-weight:400;color:var(--grey);letter-spacing:1px;margin-top:6px;}
 .price-buy{background:var(--cyan);color:var(--bg);padding:15px 32px;border-radius:2px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:15px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:none;transition:all .25s;white-space:nowrap;}
 .price-buy:hover{background:var(--cyan-bright);transform:translateY(-2px);box-shadow:0 12px 36px rgba(41,184,224,0.4);color:var(--bg);border:none;}
+.price-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
 .trust-row{display:flex;flex-wrap:wrap;gap:10px 22px;margin:14px 0 8px;font-size:12px;font-weight:600;letter-spacing:1px;color:var(--grey-light);}
 .trust-row span{display:inline-flex;align-items:center;gap:7px;}
 .trust-row span::before{content:"✓";color:var(--cyan);font-weight:800;}
@@ -385,7 +386,10 @@ article .faq h3{color:var(--white);font-size:clamp(18px,2.6vw,22px);margin-top:2
 
     <div class="price-box">
       <div class="price-amt">$2,500<small>One-time · custom audit + 90-day plan · no retainer required</small></div>
-      <a href="#contact" class="price-buy">Book a Get a Quote →</a>
+      <div class="price-actions">
+        <a href="get-started.html?service=consultation" class="price-buy" aria-label="Get started with a consultation">Get started</a>
+        <a href="#contact" class="price-buy">Book a Get a Quote →</a>
+      </div>
     </div>
     <div class="trust-row">
       <span>Locally owned in St. John's</span>
