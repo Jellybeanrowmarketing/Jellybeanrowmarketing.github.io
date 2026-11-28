@@ -518,7 +518,7 @@ nav{
 .client-grid{
   display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
   grid-template-rows:172px auto auto auto auto auto auto auto;
-  column-gap:20px;margin-top:56px;align-items:stretch;justify-items:stretch;
+  column-gap:20px;row-gap:0;margin-top:56px;align-items:stretch;justify-items:stretch;
 }
 .client-card{display:contents;}
 .client-card > *{min-width:0;}
@@ -533,9 +533,9 @@ nav{
 .client-logo img{display:block;width:auto;height:auto;max-width:100%;object-fit:contain;}
 .client-logo-reshape img{width:min(280px, 86%);height:auto;}
 .client-logo-ph img{width:min(300px, 88%);height:auto;}
-.client-shot-link{grid-row:2;position:relative;display:block;width:100%;aspect-ratio:16 / 10;margin:0;padding:0;border:0;overflow:hidden;background:transparent;line-height:0;font-size:0;}
-.client-shot{position:absolute;inset:0;display:block;width:100%;height:100%;margin:0;padding:0;border:0;object-fit:cover;object-position:top center;vertical-align:top;}
-.client-name{grid-row:3;margin:0;padding:22px 26px 0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:22px;letter-spacing:1px;text-transform:uppercase;line-height:1.15;}
+.client-shot-link{grid-row:2;position:relative;display:block;width:100%;height:100%;aspect-ratio:16 / 10;margin:0;padding:0;border:0;overflow:visible;background:transparent;line-height:0;font-size:0;z-index:1;}
+.client-shot{position:absolute;top:0;left:0;display:block;width:100%;height:calc(100% + 14px);margin:0;padding:0;border:0;object-fit:cover;object-position:top center;}
+.client-name{grid-row:3;position:relative;z-index:2;margin:0;padding:0 26px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:22px;letter-spacing:1px;text-transform:uppercase;line-height:1;background:transparent;}
 .client-intro{grid-row:4;margin:0;padding:6px 26px 0;font-size:14px;font-weight:400;color:var(--grey-light);line-height:1.6;}
 .client-svc{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:8px;margin:0;padding:14px 26px 0;height:100%;}
 .client-svc-logo{grid-row:5;}
