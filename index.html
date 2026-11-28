@@ -516,27 +516,31 @@ nav{
 /* CLIENTS */
 #clients{scroll-margin-top:90px;}
 .client-grid{
-  display:grid;grid-template-columns:1fr 1fr;column-gap:20px;margin-top:56px;
-  align-items:stretch;justify-items:stretch;
+  display:grid;grid-template-columns:1fr 1fr;
+  grid-template-rows:auto auto auto auto auto auto auto auto;
+  column-gap:20px;margin-top:56px;align-items:stretch;
 }
-.client-card{
-  display:grid;grid-template-rows:subgrid;grid-row:span 8;grid-template-columns:minmax(0,1fr);
-  min-width:0;margin:0;background:var(--bg-mid);text-decoration:none;color:inherit;
-  border-bottom:2px solid transparent;transition:background .35s,border-color .35s;overflow:hidden;
-}
-.client-card:hover{background:var(--bg-light);border-bottom-color:var(--cyan);}
-.client-body,.client-helps{display:contents;}
-.client-logo{display:flex;align-items:center;justify-content:center;min-height:172px;height:100%;margin:0;padding:22px 28px;}
+.client-card{display:contents;}
+.client-card > *{min-width:0;}
+.client-card:nth-child(1) > *{grid-column:1;}
+.client-card:nth-child(2) > *{grid-column:2;}
+.client-bg{grid-row:1 / span 8;z-index:0;background:var(--bg-mid);border-bottom:2px solid transparent;pointer-events:none;}
+.client-card:hover > .client-bg,.client-card:focus-within > .client-bg{background:var(--bg-light);border-bottom-color:var(--cyan);}
+.client-logo,.client-shot-link,.client-name,.client-intro,.client-svc,.client-link{position:relative;z-index:1;align-self:stretch;}
+.client-logo{grid-row:1;display:flex;align-items:center;justify-content:center;min-height:172px;height:100%;margin:0;padding:22px 28px;text-decoration:none;}
 .client-logo-reshape{background:#F3EFE7;}
 .client-logo-ph{background:#ffffff;}
 .client-logo img{display:block;width:auto;height:auto;max-width:100%;object-fit:contain;}
 .client-logo-reshape img{width:min(280px, 86%);height:auto;}
 .client-logo-ph img{width:min(300px, 88%);height:auto;}
-.client-shot{display:block;width:100%;height:100%;min-height:0;aspect-ratio:16 / 10;object-fit:cover;object-position:top center;margin:0;background:#111;}
-.client-body h3{margin:0;padding:22px 26px 0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:22px;letter-spacing:1px;text-transform:uppercase;line-height:1.15;}
-.client-body > p{margin:0;padding:6px 26px 0;font-size:14px;font-weight:400;color:var(--grey-light);line-height:1.6;}
-.client-helps{list-style:none;}
-.client-helps li{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:8px;margin:0;padding:14px 26px 0;height:100%;}
+.client-shot-link{grid-row:2;display:block;aspect-ratio:16 / 10;overflow:hidden;background:#111;line-height:0;}
+.client-shot{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;}
+.client-name{grid-row:3;margin:0;padding:22px 26px 0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:22px;letter-spacing:1px;text-transform:uppercase;line-height:1.15;}
+.client-intro{grid-row:4;margin:0;padding:6px 26px 0;font-size:14px;font-weight:400;color:var(--grey-light);line-height:1.6;}
+.client-svc{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:8px;margin:0;padding:14px 26px 0;height:100%;}
+.client-svc-logo{grid-row:5;}
+.client-svc-web{grid-row:6;}
+.client-svc-seo{grid-row:7;}
 .client-tag{
   display:inline-block;
   background:var(--cyan);
@@ -551,8 +555,18 @@ nav{
   line-height:1.2;
   text-transform:uppercase;
 }
-.client-helps p{margin:0;font-size:14px;font-weight:400;color:var(--grey-light);line-height:1.6;}
-.client-link{display:inline-block;margin:0;padding:18px 26px 26px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);}
+.client-svc p{margin:0;font-size:14px;font-weight:400;color:var(--grey-light);line-height:1.6;}
+a.client-tag{text-decoration:none;cursor:pointer;}
+a.client-tag:hover,a.client-tag:focus-visible{background:var(--cyan-bright);color:var(--bg);outline:2px solid var(--white);outline-offset:3px;}
+.client-link{grid-row:8;display:inline-block;align-self:start;margin:0;padding:18px 26px 26px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);text-decoration:none;}
+.client-link:hover,.client-link:focus-visible{color:var(--cyan-bright);}
+@media(max-width:899px){
+  .client-grid{display:flex;flex-direction:column;gap:20px;}
+  .client-card{display:flex;flex-direction:column;background:var(--bg-mid);border-bottom:2px solid transparent;overflow:hidden;}
+  .client-card:hover{background:var(--bg-light);border-bottom-color:var(--cyan);}
+  .client-bg{display:none;}
+  .client-shot-link{aspect-ratio:16 / 10;}
+}
 
 /* ROI */
 .roi-wrap{background:var(--bg-mid);}
@@ -668,10 +682,7 @@ footer{background:var(--bg);border-top:1px solid rgba(255,255,255,0.05);padding:
   /* Fix 3: two case study cards have inline grid-column:2 which breaks 1-col grid */
   .testi{grid-column:1!important;}
 }
-@media(max-width:899px){
-  .client-grid{grid-template-columns:1fr;}
-}
-.client-card.reveal,.client-card.reveal.vis{transform:none;}
+.client-card.reveal,.client-card.reveal.vis{opacity:1;transform:none;}
 
 /* BLOG */
 #blog .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,380px));gap:2px;}
@@ -1001,56 +1012,54 @@ footer{background:var(--bg);border-top:1px solid rgba(255,255,255,0.05);padding:
     <p class="sub">Reshape Consulting and Pamphlet House Publishing.</p>
   </div>
   <div class="client-grid">
-    <a class="client-card reveal" href="https://reshapeconsulting.ca/" target="_blank" rel="noopener noreferrer">
-      <div class="client-logo client-logo-reshape">
-        <img src="assets/clients/reshape-logo.png" alt="Reshape Consulting" width="518" height="216">
+    <article class="client-card">
+      <div class="client-bg" aria-hidden="true"></div>
+      <a class="client-logo client-logo-reshape" href="https://reshapeconsulting.ca/" target="_blank" rel="noopener noreferrer" aria-label="Reshape Consulting website">
+        <img src="assets/clients/reshape-logo.png" alt="" width="518" height="216">
+      </a>
+      <a class="client-shot-link" href="https://reshapeconsulting.ca/" target="_blank" rel="noopener noreferrer" aria-label="Reshape Consulting homepage">
+        <img class="client-shot" src="assets/clients/reshape-home.jpg" alt="Reshape Consulting homepage" width="1200" height="750">
+      </a>
+      <h3 class="client-name">Reshape Consulting</h3>
+      <p class="client-intro">A bathroom and kitchen renovation firm in St. John's, with a new logo and website.</p>
+      <div class="client-svc client-svc-logo">
+        <a class="client-tag" href="logo-design.html" aria-label="Logo Design service">Logo Design</a>
+        <p>A new, refined logo that gives Reshape a polished look homeowners remember and trust.</p>
       </div>
-      <img class="client-shot" src="assets/clients/reshape-home.jpg" alt="Reshape Consulting homepage" width="1200" height="750">
-      <div class="client-body">
-        <h3>Reshape Consulting</h3>
-        <p>A bathroom and kitchen renovation firm in St. John's, with a new logo and website.</p>
-        <ul class="client-helps">
-          <li>
-            <span class="client-tag">Logo Design</span>
-            <p>A new, refined logo that gives Reshape a polished look homeowners remember and trust.</p>
-          </li>
-          <li>
-            <span class="client-tag">Web Design</span>
-            <p>A calm, polished site that shows Reshape's work the way homeowners picture their new space, so visitors trust them and reach out to start a project.</p>
-          </li>
-          <li>
-            <span class="client-tag">SEO</span>
-            <p>Search setup and ongoing care help homeowners in St. John's find Reshape when they look up bathroom or kitchen renovations.</p>
-          </li>
-        </ul>
-        <span class="client-link">Visit site →</span>
+      <div class="client-svc client-svc-web">
+        <a class="client-tag" href="webdesign.html" aria-label="Web Design service">Web Design</a>
+        <p>A calm, polished site that shows Reshape's work the way homeowners picture their new space, so visitors trust them and reach out to start a project.</p>
       </div>
-    </a>
-    <a class="client-card reveal" href="https://pamphlethousepublishing.com/" target="_blank" rel="noopener noreferrer">
-      <div class="client-logo client-logo-ph">
-        <img src="assets/clients/ph-logo.png" alt="Pamphlet House Publishing" width="400" height="96">
+      <div class="client-svc client-svc-seo">
+        <a class="client-tag" href="seo.html" aria-label="SEO service">SEO</a>
+        <p>Search setup and ongoing care help homeowners in St. John's find Reshape when they look up bathroom or kitchen renovations.</p>
       </div>
-      <img class="client-shot" src="assets/clients/ph-home.jpg" alt="Pamphlet House Publishing homepage" width="1200" height="750">
-      <div class="client-body">
-        <h3>Pamphlet House Publishing</h3>
-        <p>A St. John's publisher of annotated classics, with a new logo and bookstore.</p>
-        <ul class="client-helps">
-          <li>
-            <span class="client-tag">Logo Design</span>
-            <p>A classic, bookish logo that gives Pamphlet House a timeless look readers recognize and trust.</p>
-          </li>
-          <li>
-            <span class="client-tag">Web Design</span>
-            <p>A clean online bookstore that makes it easy for readers to browse the classics, pick a book and order it.</p>
-          </li>
-          <li>
-            <span class="client-tag">SEO</span>
-            <p>Ongoing search work helps readers find Pamphlet House's editions when they look up classic books online.</p>
-          </li>
-        </ul>
-        <span class="client-link">Visit site →</span>
+      <a class="client-link" href="https://reshapeconsulting.ca/" target="_blank" rel="noopener noreferrer">Visit site →</a>
+    </article>
+    <article class="client-card">
+      <div class="client-bg" aria-hidden="true"></div>
+      <a class="client-logo client-logo-ph" href="https://pamphlethousepublishing.com/" target="_blank" rel="noopener noreferrer" aria-label="Pamphlet House Publishing website">
+        <img src="assets/clients/ph-logo.png" alt="" width="400" height="96">
+      </a>
+      <a class="client-shot-link" href="https://pamphlethousepublishing.com/" target="_blank" rel="noopener noreferrer" aria-label="Pamphlet House Publishing homepage">
+        <img class="client-shot" src="assets/clients/ph-home.jpg" alt="Pamphlet House Publishing homepage" width="1200" height="750">
+      </a>
+      <h3 class="client-name">Pamphlet House Publishing</h3>
+      <p class="client-intro">A St. John's publisher of annotated classics, with a new logo and bookstore.</p>
+      <div class="client-svc client-svc-logo">
+        <a class="client-tag" href="logo-design.html" aria-label="Logo Design service">Logo Design</a>
+        <p>A classic, bookish logo that gives Pamphlet House a timeless look readers recognize and trust.</p>
       </div>
-    </a>
+      <div class="client-svc client-svc-web">
+        <a class="client-tag" href="webdesign.html" aria-label="Web Design service">Web Design</a>
+        <p>A clean online bookstore that makes it easy for readers to browse the classics, pick a book and order it.</p>
+      </div>
+      <div class="client-svc client-svc-seo">
+        <a class="client-tag" href="seo.html" aria-label="SEO service">SEO</a>
+        <p>Ongoing search work helps readers find Pamphlet House's editions when they look up classic books online.</p>
+      </div>
+      <a class="client-link" href="https://pamphlethousepublishing.com/" target="_blank" rel="noopener noreferrer">Visit site →</a>
+    </article>
   </div>
 </section>
 
