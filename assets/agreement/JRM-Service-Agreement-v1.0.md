@@ -1,7 +1,7 @@
 # Client Service Agreement
 
 **Jellybean Row Marketing Inc.**
-St. John's, Newfoundland and Labrador, Canada
+495 Water Street, St. John's, Newfoundland and Labrador A1E 6B5, Canada
 Tyler@Jellybeanrowmarketing.com · 709-315-6483 · jellybeanrowmarketing.com
 
 Agreement version: 1.0 · Effective November 28, 2026
@@ -12,7 +12,7 @@ Agreement version: 1.0 · Effective November 28, 2026
 
 This agreement is between:
 
-- **Jellybean Row Marketing Inc.** ("**JRM**", "**we**", "**us**"), a company based in St. John's, Newfoundland and Labrador; and
+- **Jellybean Row Marketing Inc.** ("**JRM**", "**we**", "**us**"), a company based in St. John's, Newfoundland and Labrador, with its business address at 495 Water Street, St. John's, Newfoundland and Labrador A1E 6B5; and
 - **The client** named in the signature block below ("**you**", "**the Client**"). If you are signing for a business, you confirm that you are allowed to sign for it, and "you" means that business.
 
 You must accept this agreement online before you can pay for a service on our website. The agreement starts on the date you accept it (the "**Start Date**").
@@ -118,7 +118,7 @@ Marketing results depend on things we don't control, such as search engine and p
 
 10.2 This does not cover information that is already public, that the other party already had, or that the law requires someone to disclose.
 
-10.3 We handle personal information in line with Canada's *Personal Information Protection and Electronic Documents Act* (PIPEDA). We keep passwords and access secure, and we stop using them when the service ends. To ask about the personal information we hold about you, or to access or correct it, contact Tyler York at Tyler@Jellybeanrowmarketing.com.
+10.3 We handle personal information in line with Canada's *Personal Information Protection and Electronic Documents Act* (PIPEDA). We keep passwords and access secure, and we stop using them when the service ends. To ask about the personal information we hold about you, or to access or correct it, contact Tyler York at Tyler@Jellybeanrowmarketing.com or by mail at 495 Water Street, St. John's, Newfoundland and Labrador A1E 6B5.
 
 10.4 These duties continue after this agreement ends.
 
